@@ -73,21 +73,21 @@ RUN pip install pandas_datareader
 
 
 RUN conda update -y --all
-RUN conda list
+#RUN conda list
 RUN conda install -c quantopian ta-lib
 RUN conda install -c anaconda pandas-datareader
-RUN conda install -c anaconda jupyterlab
-RUN conda install -c anaconda scipy
+#RUN conda install -c anaconda jupyterlab
+#RUN conda install -c anaconda scipy
 RUN conda install -c conda-forge streamlit
-RUN conda install -c conda-forge fbprophet
+#RUN conda install -c conda-forge fbprophet
 RUN conda install -c conda-forge scikit-learn
 RUN conda install -c conda-forge keras
 RUN conda install pytorch torchvision cpuonly -c pytorch
-RUN conda install keras
+#RUN conda install keras
 
 
 # have everything updated
-RUN conda update -y --all
+#RUN conda update -y --all
 
 
 ## Step 4:
