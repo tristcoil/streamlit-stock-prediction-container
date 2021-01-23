@@ -2,6 +2,18 @@ pipeline {
      agent any
      stages {
 
+
+       stage('Pre-clean-up of docker images') {
+           steps {
+                  sh 'df -h'
+                  sh 'sudo docker system prune -f -a'
+                  sh 'df -h'
+            }
+           }
+
+
+
+
          stage('Linting') {
              steps {
                     sh 'python3 -m venv venv'
