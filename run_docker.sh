@@ -7,10 +7,10 @@
 # dont forget about dot at the end
 docker build --tag=stock_analytics .
 
-# Step 2: 
+# Step 2:
 # List docker images
 docker image ls
 
-# Step 3: 
+# Step 3:
 # Run flask app
-docker run -p 8000:80 stock_analytics
+docker run -p 80:80 stock_analytics

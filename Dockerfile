@@ -98,6 +98,5 @@ EXPOSE 8501
 
 ## Step 5:
 # Run app.py at container launch
-CMD ["streamlit" ,"run", "app.py"]
-
-#CMD ["conda", "run", "-n", "trading_env", "streamlit", "run", "app.py", "--server.port=80"]
+#CMD ["streamlit" ,"run", "app.py"]
+CMD ["conda", "run", "-n", "trading_env", "streamlit", "run", "app.py", "--server.port=80"]
