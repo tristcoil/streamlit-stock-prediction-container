@@ -69,10 +69,10 @@ RUN pip install cython
 RUN pip install yfinance
 RUN pip3 install yfinance
 RUN pip install joblib
-RUN pip install pandas_datareader
+#RUN pip install pandas_datareader
 
 
-RUN conda update -y --all
+#RUN conda update -y --all
 #RUN conda list
 RUN conda install -c quantopian ta-lib
 RUN conda install -c anaconda pandas-datareader
@@ -82,8 +82,11 @@ RUN conda install -c conda-forge streamlit
 #RUN conda install -c conda-forge fbprophet
 RUN conda install -c conda-forge scikit-learn
 RUN conda install -c conda-forge keras
+RUN conda install -c conda-forge matplotlib
 RUN conda install pytorch torchvision cpuonly -c pytorch
 #RUN conda install keras
+RUN conda install -c anaconda pandas
+RUN conda install -c anaconda numpy
 
 
 # have everything updated

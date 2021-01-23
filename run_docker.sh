@@ -5,7 +5,7 @@
 # Step 1:
 # Build image and add a descriptive tag
 # dont forget about dot at the end
-docker build --tag=stock_analytics .
+docker build --tag=stock_analytics:latest .
 
 # Step 2:
 # List docker images
