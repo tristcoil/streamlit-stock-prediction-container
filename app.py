@@ -70,7 +70,7 @@ def plot_OHLC(data, ticker):
 import talib as ta
 import joblib
 import pandas as pd
-import pandas_datareader.data as web
+#import pandas_datareader.data as web
 import numpy as np
 import matplotlib.pyplot as plt
 import datetime
