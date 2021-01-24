@@ -72,12 +72,8 @@ RUN pip install joblib
 #RUN pip install pandas_datareader
 
 
-<<<<<<< HEAD
 RUN conda update -y --all
 
-=======
-#RUN conda update -y --all
->>>>>>> c9e94c27461a620efd849154a2b8501aadc46c02
 #RUN conda list
 #RUN conda install -c anaconda jupyterlab
 #RUN conda install -c anaconda scipy
@@ -91,12 +87,9 @@ RUN conda install -c conda-forge scikit-learn
 RUN conda install -c conda-forge keras
 RUN conda install -c conda-forge matplotlib
 RUN conda install pytorch torchvision cpuonly -c pytorch
-<<<<<<< HEAD
-=======
 #RUN conda install keras
 RUN conda install -c anaconda pandas
 RUN conda install -c anaconda numpy
->>>>>>> c9e94c27461a620efd849154a2b8501aadc46c02
 
 
 # have everything updated
