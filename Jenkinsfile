@@ -58,7 +58,7 @@ pipeline {
               }
              }
 
-         removing deployment (changes LB address)
+//         removing deployment (changes LB address)
            stage('Delete previous deployment') {
              steps {
                     withAWS(credentials:'aws-kubernetes') {
